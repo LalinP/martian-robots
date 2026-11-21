@@ -1,4 +1,4 @@
-package com.martianrobots
+package com.bpl.martianrobots
 
 import org.junit.jupiter.api.Test
 import kotlin.test.assertTrue

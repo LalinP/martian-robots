@@ -18,7 +18,7 @@ kotlin {
 }
 
 application {
-    mainClass = "com.martianrobots.MainKt"
+    mainClass = "com.bpl.martianrobots.MainKt"
 }
 
 tasks.test {

@@ -30,9 +30,9 @@ martian-robots/
 │   └── wrapper/                  # Gradle wrapper (pins Gradle 9.4.0)
 ├── gradlew, gradlew.bat          # Gradle wrapper scripts
 └── src/
-    ├── main/kotlin/com/martianrobots/
+    ├── main/kotlin/com/bpl/martianrobots/
     │   └── Main.kt               # Application entry point
-    └── test/kotlin/com/martianrobots/
+    └── test/kotlin/com/bpl/martianrobots/
         └── MainTest.kt           # Unit tests
 ```
 
@@ -51,7 +51,7 @@ The JDK version is set in `build.gradle.kts` with `kotlin { jvmToolchain(25) }`.
 
 ### Application
 
-The `application` plugin is configured with the main class `com.martianrobots.MainKt` (the `main` function in `Main.kt`), so `./gradlew run` starts the app.
+The `application` plugin is configured with the main class `com.bpl.martianrobots.MainKt` (the `main` function in `Main.kt`), so `./gradlew run` starts the app.
 
 ### Gradle properties
 
