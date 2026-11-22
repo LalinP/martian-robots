@@ -24,3 +24,8 @@ application {
 tasks.test {
     useJUnitPlatform()
 }
+
+tasks.named<JavaExec>("run") {
+    // Forward stdin so input can be piped in: ./gradlew run -q < sample-input.txt
+    standardInput = System.`in`
+}
