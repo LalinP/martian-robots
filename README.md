@@ -64,10 +64,10 @@ Invalid input (bad format, coordinates outside the limits, unknown instructions)
 ./gradlew run -q --args="sample-input.txt"   # run with an input file
 ./gradlew run -q < sample-input.txt          # or pipe input through stdin
 ```
-
+## Data Input
 `sample-input.txt` contains the example input shown above. Relative file paths are resolved from the project directory.
 
-### Saving the output to a file
+## Saving the output to a file
 
 Redirect standard output to write the results to `output.txt` in the project directory:
 
@@ -135,15 +135,6 @@ martian-robots/
 - Commands implement the `Command` interface and are looked up by character in `Commands`. To add a new instruction type, implement `Command` and register it in `Commands`; the parser and simulation don't need to change.
 
 ## Configuration
-
-### Toolchain
-
-| Component | Version |
-|-----------|---------|
-| Kotlin    | 2.3.0   |
-| JDK       | 25      |
-| Gradle    | 9.4.0 (wrapper) |
-| JUnit     | 6.0.1 (Jupiter) |
 
 The JDK version is set in `build.gradle.kts` with `kotlin { jvmToolchain(25) }`.
 
