@@ -10,13 +10,13 @@ Robots move around a rectangular grid on Mars. The lower-left corner is `0 0` an
 - `L`: turn left 90 degrees, staying on the same point
 - `R`: turn right 90 degrees, staying on the same point
 - `F`: move forward one point in the direction it is facing
-- `B`: move back one point, opposite to the direction it is facing, without turning **(an extension to the original problem)**
-- `J`: jump forward two points in the direction it is facing **(an extension to the original problem)**. Each point is checked separately, so a robot can be lost, or saved by a scent, on either step
 
 A robot that moves off the grid, whether forwards, backwards or mid-jump, is **LOST**. It is reported at the last point it held on the grid, and it leaves a **scent** there. A later robot on a scented point ignores any move (`F`, `B` or a step of `J`) that would take it off the grid. Robots run one after another, so each robot only benefits from scents left by robots before it.
 
 Limits: grid coordinates are at most 50, and instruction strings are fewer than 100 characters.
-
+## Extension Tasks
+- `B`: move back one point, opposite to the direction it is facing, without turning **(an extension to the original problem)**
+- `J`: jump forward two points in the direction it is facing **(an extension to the original problem)**. Each point is checked separately, so a robot can be lost, or saved by a scent, on either step
 ### Input and output
 
 The first line is the upper-right corner of the grid. Each robot then takes two lines: its starting position and orientation, then its instructions. Blank lines are ignored.
